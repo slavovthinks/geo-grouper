@@ -22,15 +22,15 @@ The API uses multiple geocoding vendors as some vendors handle some addresses be
 1. For interactive API docs check `localhost:8000/docs`
 
 ## Available env variables
-| ENV VAR NAME             | REQUIRED | DEFAULT                                  | DESCRIPTION                                              | ACCEPTABLE VALUES         |
-|--------------------------|----------|------------------------------------------|----------------------------------------------------------|---------------------------|
-| GEOAPIFY_API_KEY         | Yes      | *None*                                   | API key for Geoapify service                             | -                         |
-| GEOAPIFY_RATE_LIMIT      | No       | 5                                        | Rate limit for Geoapify requests, in requests per second | -                         |
-| GEOAPIFY_BASE_URL        | No       | "https://api.geoapify.com/v1/geocode"    | Base URL for the Geoapify geocoding service              | -                         |
-| MAPS_CO_RATE_LIMIT       | No       | 2                                        | Rate limit for Maps.co requests, in requests per second  | -                         |
-| MAPS_CO_BASE_URL         | No       | "https://geocode.maps.co"                | Base URL for the Maps.co geocoding service               | -                         |
-| GROUP_RADIUS             | No       | 30                                       | Maximum radius in meters for forming a group             | -                         |
-| ENABLED_VENDORS          | Yes      | *None*                                   | List of enabled vendors in order of priority             | "maps_co", "geoapify"     |
+| ENV VAR NAME             | REQUIRED               | DEFAULT                                  | DESCRIPTION                                              | ACCEPTABLE VALUES         |
+|--------------------------|------------------------|------------------------------------------|----------------------------------------------------------|---------------------------|
+| GEOAPIFY_API_KEY         | If geoapify is enabled | *None*                                   | API key for Geoapify service                             | -                         |
+| GEOAPIFY_RATE_LIMIT      | No                     | 5                                        | Rate limit for Geoapify requests, in requests per second | -                         |
+| GEOAPIFY_BASE_URL        | No                     | "https://api.geoapify.com/v1/geocode"    | Base URL for the Geoapify geocoding service              | -                         |
+| MAPS_CO_RATE_LIMIT       | No                     | 2                                        | Rate limit for Maps.co requests, in requests per second  | -                         |
+| MAPS_CO_BASE_URL         | No                     | "https://geocode.maps.co"                | Base URL for the Maps.co geocoding service               | -                         |
+| GROUP_RADIUS             | No                     | 30                                       | Maximum radius in meters for forming a group             | -                         |
+| ENABLED_VENDORS          | Yes                    | *None*                                   | List of enabled vendors in order of priority             | "maps_co", "geoapify"     |
 
 To set a list in the `.env` file for the `ENABLED_VENDORS` environment variable, use a JSON array format.
 
