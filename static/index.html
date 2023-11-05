@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Grouper</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Group People by Address</h1>
+
+        <!-- Manual Entry Form -->
+        <div class="manual-entry-form mt-4">
+            <h3>Enter Data Manually:</h3>
+            <textarea id="manualEntry" class="form-control" rows="5"></textarea>
+            <button id="submitManual" class="btn btn-primary mt-2">Submit</button>
+        </div>
+
+        <!-- File Upload Form -->
+        <div class="file-upload-form mt-4">
+            <h3>Or Upload a CSV File:</h3>
+            <input type="file" id="fileInput" class="form-control-file">
+            <button id="submitFile" class="btn btn-primary mt-2">Upload</button>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section mt-5">
+            <h3>Grouped Results:</h3>
+            <pre id="results"></pre>
+            <button id="downloadResults" class="btn btn-secondary mt-2" style="display: none;">Download Results</button>
+        </div>
+    </div>
+    <!-- Loading overlay  -->
+    <div class="overlay" id="overlay" style="display: none;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/static/main.js"></script>
+</body>
+</html>

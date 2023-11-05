@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "geo-grouper"
+version = "0.1.0"
+description = ""
+authors = ["Radostin Slavov <r.slavov@abv.bg>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.*"
+geopy = "^2.4.0"
+fastapi = {extras = ["all"], version = "^0.104.1"}
+aiohttp = "^3.8.6"
+aiolimiter = "^1.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
