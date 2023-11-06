@@ -20,6 +20,7 @@ The API uses multiple geocoding vendors as some vendors handle some addresses be
 1. Open `localhost:8000/static/index.html`
 1. In the project root you can find `ResTecDevTask-sample_input_v1.csv` and use it for testing
 1. For interactive API docs check `localhost:8000/docs`
+1. To run the tests use `make test`
 
 ## Available env variables
 | ENV VAR NAME             | REQUIRED               | DEFAULT                                  | DESCRIPTION                                              | ACCEPTABLE VALUES         |
